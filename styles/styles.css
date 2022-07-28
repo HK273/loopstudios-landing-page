@@ -193,7 +193,7 @@ h1 {
     /* background-position: center; */
     overflow: hidden;
     width: 100vw;
-    height: 45rem;
+    height: 80rem;
   }
   .grid-two {
     max-width: 1800px;
@@ -201,6 +201,8 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .grid-one {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1700px;
     margin-inline: auto;
   }
   .earth {
@@ -208,55 +210,64 @@ h1 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .arcade {
     background: url(../images/desktop/image-night-arcade.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .soccer {
     background: url(../images/desktop/image-soccer-team.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .grid {
     background: url(../images/desktop/image-grid.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .above {
     background: url(../images/desktop/image-from-above.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .borealis {
     background: url(../images/desktop/image-pocket-borealis.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .curiosity {
     background: url(../images/desktop/image-curiosity.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
   }
   .fish {
     background: url(../images/desktop/image-fisheye.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    height: 50rem;
+    height: 70rem;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 1.6rem;
+    color: var(--white);
+    font-size: 3.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    /* font-family: "Alata", sans-serif; */
   }
 }
