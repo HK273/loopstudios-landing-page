@@ -70,12 +70,11 @@ header {
 
 .txt-box {
   position: absolute;
-  /* top: 20%;
-  left: 10%; */
-  width: 50rem;
+  top: 20%;
+  width: 70rem;
   border: 2px solid var(--white);
   /* t-r-b-l */
-  /* padding: 3rem 3rem 3rem 3rem; */
+  padding: 3rem 3rem 3rem 3rem;
   /* left: 30rem; */
   color: var(--white);
   font-size: 8rem;
@@ -94,10 +93,20 @@ button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
 }
+button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
 .flex-btn {
   display: none;
 }
-
+.btn-two-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15rem;
+}
 /* General Grids */
 .grid-one {
   display: grid;
@@ -108,6 +117,7 @@ button {
   display: grid;
   margin-top: 6rem;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .vr-image {
   justify-content: center;
@@ -211,7 +221,7 @@ h1 {
 
 /* Footer section */
 .footer-grid {
-  height: 60rem;
+  height: 30rem;
   background-color: var(--black);
 }
 
@@ -236,9 +246,13 @@ h1 {
   .grid-two {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+    margin-bottom: 20rem;
   }
   .grid-one {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-two {
+    display: none;
   }
   .earth {
     background: url(../images/desktop/image-deep-earth.jpg);
@@ -311,6 +325,7 @@ h1 {
   .vr-image {
     grid-column: 1/3;
     grid-row: 1/2;
+    text-align: start;
   }
   .vr-content {
     grid-column: 2/-1;
