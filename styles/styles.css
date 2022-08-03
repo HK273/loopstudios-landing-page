@@ -63,11 +63,9 @@ header {
   background: url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* background-position: center; */
   overflow: hidden;
   height: 65rem;
 }
-
 .txt-box {
   position: absolute;
   top: 20%;
@@ -81,7 +79,7 @@ header {
   font-family: "Josefin Sans", sans-serif;
 }
 
-img {
+.img-int {
   max-width: 100%;
 }
 button {
@@ -347,7 +345,7 @@ h1 {
     margin-bottom: 10rem;
     align-items: center;
   }
-  img {
+  .img-int {
     height: 70rem;
   }
 }

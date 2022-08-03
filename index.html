@@ -4,23 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navbar.css">
     <script src="script/script.js" defer></script>
     <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
     <header>
-      <!-- <img src="/images/desktop/image-hero.jpg" alt="" srcset="" /> -->
-      <nav>
+        <nav class="menu navbar">
+          <img class="logo_one" src="images/logo.svg" alt="logo" />
+          <ul class="nav-menu">
+              <img class="logo" src="images/logo.svg" alt="logo" />
+              <li class="item">
+                <a id="item-one" class="main-item" tabindex="0"
+                  >About</a>
+              </li>
+              <li class="item">
+                <a id="item-two" class="main-item" tabindex="0"
+                  >Services</a>
+              </li>
+              <li class="item">
+                <a id="item-two" class="main-item" tabindex="0"
+                  >Projects</a>
+              </li>
+              <li class="nav-item item">
+                <button class="buttons">CONTACT</button>
+              </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
         <div class="tx-wrapper">
           <div class="txt-box">IMMERSIVE EXPERIENCES THAT DELIVER</div>
         </div>
-      </nav>
     </header>
     <main>
       <div class="grid-one">
         <div class="vr-image">
-          <img src="/images/desktop/image-interactive.jpg" alt="" srcset="" />
+          <img class="img-int" src="images/desktop/image-interactive.jpg" alt="" srcset="" />
         </div>
         <div class="vr-content">
           <h1 class="h-content">THE LEADER IN INTERACTIVE VR</h1>
@@ -65,7 +89,6 @@
       <div class="btn-two-wrap">
         <button class="btn-two">SEE ALL</button>
       </div>
-      
     </main>
     <footer class="footer-grid"></footer>
   </body>

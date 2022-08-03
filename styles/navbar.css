@@ -1,0 +1,236 @@
+/* Resources */
+
+/* CSS Box shadows: https://getcssscan.com/css-box-shadow-examples */
+
+/* Import styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+/* Overpass */
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+
+/* Ubuntu */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Custom Properties  */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --yellow: hsl(51, 100%, 49%);
+  --header-blue: #3dbeff;
+  --v-dark-grayish-blue: hsl(213, 9%, 39%);
+}
+/* Just couldn't get the Navbar logo working correctly with the spaces,
+this works butsure there is a better way to do this.
+*/
+
+.logo_one {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-menu {
+  white-space: nowrap;
+  list-style-type: none;
+  padding-top: 2.5rem;
+  /* First three items left of screen */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 5rem 0 5rem;
+}
+
+/* Submenu */
+
+/* Line on moblile menu between login / sign up / other items */
+
+.space {
+  display: none;
+}
+
+/* login / sign up left of screen */
+
+nav li:nth-child(2) {
+  margin-left: auto;
+}
+
+.main-item {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  /* Space between links */
+  margin: 0 2rem;
+  color: white;
+  font-size: 1.8rem;
+  transition: all 0.3s ease 0s;
+}
+.nav-item {
+  margin: 0 2rem;
+}
+.main-item:hover {
+  color: var(--yellow);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button styles */
+
+/* Contact */
+.buttons {
+  background-color: white;
+  color: var(--almost-white);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  width: 13rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 1.8rem;
+}
+.buttons:hover {
+  background-color: var(--yellow);
+  color: white;
+}
+
+/* Hamburger styles */
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  margin: 0.6rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* submenu */
+
+.active .item {
+  display: block;
+  position: relative;
+}
+
+.icons {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.has-submenu i {
+  font-size: 12px;
+}
+
+.toggle i {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Breakpoints */
+
+/* Nav Header / Top Heading / Footer at smaller breakpoint */
+
+/* Navigation Menu */
+
+@media only screen and (max-width: 50em) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 3rem 0 3rem;
+  }
+  /* remove logo */
+  .logo {
+    display: none;
+  }
+  /* add flex logo */
+  .logo_one {
+    display: flex;
+    cursor: pointer;
+  }
+  .nav-menu {
+    position: fixed;
+    padding: 4rem 0 2rem 0;
+    right: -100%;
+    flex-direction: column;
+    background-color: white;
+    width: 85%;
+    border-radius: 0.2rem;
+    text-align: center;
+    align-items: center;
+    /* This creates a slide in affect */
+    /* transition: 0.5s; */
+  }
+  .nav-menu.active {
+    /* Centre collapsable menu */
+    position: absolute;
+    z-index: 1;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Top right corner of dropdown menu */
+    border-right: 3rem solid transparent;
+    border-top: 3rem solid var(--header-blue);
+  }
+  .buttons {
+    background-color: var(--yellow);
+    margin-left: 3rem;
+  }
+  .buttons:hover {
+    background-color: var(--header-blue);
+  }
+  .main-item {
+    color: var(--v-dark-grayish-blue);
+    margin-left: 5rem;
+  }
+  /* Reset login / register up position */
+  nav li:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+  /* Line seperating carreers / about / login / sign up */
+  .logo_one {
+    margin-top: 2.5rem;
+  }
+
+  /* space between menu items */
+  .item {
+    margin-bottom: 3rem;
+  }
+  li:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  .hamburger {
+    position: relative;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  /* Hamburger transition */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.9rem) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.9rem) rotate(-45deg);
+  }
+}
