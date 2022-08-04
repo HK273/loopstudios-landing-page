@@ -1,31 +1,6 @@
-/* Resources */
-
-/* CSS Box shadows: https://getcssscan.com/css-box-shadow-examples */
-
-/* Import styles */
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
-
-/* Overpass */
-
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
-
-/* Ubuntu */
-
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-
-/* Custom Properties  */
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
-
-:root {
-  --yellow: hsl(51, 100%, 49%);
-  --header-blue: #3dbeff;
-  --v-dark-grayish-blue: hsl(213, 9%, 39%);
-}
-/* Just couldn't get the Navbar logo working correctly with the spaces,
-this works butsure there is a better way to do this.
-*/
-
+/* Alata -> font-family: 'Alata', sans-serif; */
+/* Josefin Sans -> font-family: 'Josefin Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .logo_one {
   display: none;
 }
@@ -37,12 +12,11 @@ this works butsure there is a better way to do this.
 .nav-menu {
   white-space: nowrap;
   list-style-type: none;
-  padding-top: 2.5rem;
   /* First three items left of screen */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 5rem 0 5rem;
+  padding: 5rem 5rem 0 5rem;
 }
 
 /* Submenu */
@@ -60,22 +34,22 @@ nav li:nth-child(2) {
 }
 
 .main-item {
-  font-family: "Epilogue", sans-serif;
-  font-weight: 500;
+  font-family: "Alata", sans-serif;
+  /* font-weight: 500; */
   text-decoration: none;
   cursor: pointer;
   /* Space between links */
   margin: 0 2rem;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   transition: all 0.3s ease 0s;
 }
 .nav-item {
   margin: 0 2rem;
 }
-.main-item:hover {
+/* .main-item:hover {
   color: var(--yellow);
-}
+} */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -145,7 +119,7 @@ a {
 
 /* Navigation Menu */
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 60em) {
   nav {
     display: flex;
     justify-content: flex-end;
@@ -165,7 +139,7 @@ a {
     padding: 4rem 0 2rem 0;
     right: -100%;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
     width: 85%;
     border-radius: 0.2rem;
     text-align: center;
@@ -180,9 +154,6 @@ a {
     top: 7rem;
     left: 50%;
     transform: translateX(-50%);
-    /* Top right corner of dropdown menu */
-    border-right: 3rem solid transparent;
-    border-top: 3rem solid var(--header-blue);
   }
   .buttons {
     background-color: var(--yellow);
@@ -192,8 +163,11 @@ a {
     background-color: var(--header-blue);
   }
   .main-item {
-    color: var(--v-dark-grayish-blue);
+    color: white;
     margin-left: 5rem;
+  }
+  .main-item:hover {
+    color: #8b3887;
   }
   /* Reset login / register up position */
   nav li:nth-child(2) {
