@@ -19,14 +19,6 @@
   padding: 5rem 5rem 0 5rem;
 }
 
-/* Submenu */
-
-/* Line on moblile menu between login / sign up / other items */
-
-.space {
-  display: none;
-}
-
 /* login / sign up left of screen */
 
 nav li:nth-child(2) {
@@ -47,9 +39,9 @@ nav li:nth-child(2) {
 .nav-item {
   margin: 0 2rem;
 }
-/* .main-item:hover {
-  color: var(--yellow);
-} */
+.main-item:hover {
+  color: black;
+}
 a {
   text-decoration: none;
   cursor: pointer;

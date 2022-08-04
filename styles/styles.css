@@ -64,18 +64,26 @@ header {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 65rem;
+  height: 90rem;
+}
+.tx-wrapper {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  /* t-r-b-l */
+  padding: 0 2.8rem 0 2.8rem;
 }
 .txt-box {
   position: absolute;
   top: 20%;
-  width: 70rem;
+  width: 80%;
   border: 2px solid var(--white);
   /* t-r-b-l */
   padding: 3rem 3rem 3rem 3rem;
   /* left: 30rem; */
   color: var(--white);
-  font-size: 8rem;
+  font-size: 6rem;
+  line-height: 1.2;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -224,12 +232,21 @@ h1 {
 }
 
 @media screen and (min-width: 1300px) {
-  main,
-  .tx-wrapper {
+  main {
     max-width: 1800px;
     margin-inline: auto;
     /* t-r-b-l */
     padding: 0 2.8rem 0 2.8rem;
+  }
+  .tx-wrapper {
+    display: block;
+    max-width: 1800px;
+    margin-inline: auto;
+    /* t-r-b-l */
+  }
+  .txt-box {
+    width: 70rem;
+    font-size: 8rem;
   }
 
   header {
