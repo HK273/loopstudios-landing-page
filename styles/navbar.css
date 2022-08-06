@@ -175,9 +175,9 @@ a {
   }
 
   /* space between menu items */
-  .item {
+  /* .item {
     margin-bottom: 3rem;
-  }
+  } */
   li:hover {
     text-decoration: none;
     color: inherit;
