@@ -234,9 +234,15 @@ h1 {
 
 /* Footer section */
 .footer-grid {
-  height: 50rem;
+  /* height: 50rem; */
+  /* t-r-b-l */
+  padding: 5rem 0 10rem 0;
+  padding-top: 5rem;
   background-color: var(--black);
   text-align: center;
+}
+.footer-logo {
+  margin-bottom: 5rem;
 }
 .item-fot {
   margin-bottom: 3rem;
@@ -256,6 +262,15 @@ h1 {
 .main-item-fot:hover {
   color: #8b3887;
 }
+.footer-two {
+  margin-top: 7rem;
+}
+.flex-logo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 3rem;
+  justify-content: center;
+}
 
 @media screen and (min-width: 1300px) {
   main {
@@ -268,9 +283,15 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .footer-two {
+    margin-top: 2rem;
+  }
+  .footer-logo {
+    display: flex;
+  }
   .flex-links {
     display: flex;
-    justify-content: space-around;
+    gap: 5em;
   }
   .tx-wrapper {
     display: block;
