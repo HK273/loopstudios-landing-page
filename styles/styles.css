@@ -232,7 +232,7 @@ h1 {
   height: 25rem;
 }
 
-/* Footer section */
+/* Footer section - bit messy on larger screen sizes */
 .footer-grid {
   /* height: 50rem; */
   /* t-r-b-l */
