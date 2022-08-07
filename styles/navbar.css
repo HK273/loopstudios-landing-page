@@ -16,7 +16,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 5rem 5rem 0 5rem;
+  /* t-r-b-l */
+  padding: 5rem 0 0 0;
 }
 
 /* login / sign up left of screen */
@@ -111,10 +112,11 @@ a {
 
 /* Navigation Menu */
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 80em) {
   nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 0 3rem 0 3rem;
   }
   /* remove logo */
