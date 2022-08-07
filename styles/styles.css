@@ -241,6 +241,7 @@ h1 {
   background-color: var(--black);
   text-align: center;
 }
+
 .footer-logo {
   margin-bottom: 5rem;
 }
@@ -273,7 +274,8 @@ h1 {
 }
 
 @media screen and (min-width: 1300px) {
-  main {
+  main,
+  nav {
     max-width: 1800px;
     margin-inline: auto;
     /* t-r-b-l */
@@ -282,6 +284,9 @@ h1 {
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-one {
+    padding-left: 20rem;
   }
   .footer-two {
     margin-top: 2rem;
@@ -311,7 +316,7 @@ h1 {
     /* background-position: center; */
     overflow: hidden;
     width: 100vw;
-    height: 80rem;
+    height: 90rem;
   }
   .grid-two {
     grid-template-columns: repeat(4, 1fr);
