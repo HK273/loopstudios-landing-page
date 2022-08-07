@@ -64,7 +64,7 @@ header {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 90rem;
+  height: 60rem;
 }
 .tx-wrapper {
   display: flex;
@@ -82,7 +82,7 @@ header {
   padding: 3rem 3rem 3rem 3rem;
   /* left: 30rem; */
   color: var(--white);
-  font-size: 6rem;
+  font-size: 4.5rem;
   line-height: 1.2;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -133,14 +133,14 @@ button:hover {
 .vr-content {
   text-align: center;
   /* t-r-b-l */
-  margin: 0 2rem 0 2rem;
+  /* margin: 0 2rem 0 2rem; */
 }
 .vr-content-p {
   font-family: "Alata", sans-serif;
   font-weight: 300;
   color: var(--dark-gray);
   line-height: 1.8;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   /* t-r-b-l */
   margin: 3rem 0 15rem 0;
 }
@@ -150,7 +150,7 @@ button:hover {
 h1 {
   text-align: center;
   line-height: 1.1;
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: var(--black);
@@ -180,59 +180,59 @@ h1 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .arcade {
   background: url(../images/mobile/image-night-arcade.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .soccer {
   background: url(../images/mobile/image-soccer-team.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .grid {
   background: url(../images/mobile/image-grid.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .above {
   background: url(../images/mobile/image-from-above.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .borealis {
   background: url(../images/mobile/image-pocket-borealis.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .curiosity {
   background: url(../images/mobile/image-curiosity.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 .fish {
   background: url(../images/mobile/image-fisheye.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  height: 25rem;
+  height: 20rem;
 }
 
-/* Footer section - bit messy on larger screen sizes */
+/* Footer section - bit messy on larger screen */
 .footer-grid {
   /* height: 50rem; */
   /* t-r-b-l */
@@ -276,7 +276,7 @@ h1 {
 @media screen and (min-width: 1300px) {
   main,
   nav {
-    max-width: 1800px;
+    max-width: 1440px;
     margin-inline: auto;
     /* t-r-b-l */
     padding: 0 2.8rem 0 2.8rem;
@@ -300,13 +300,13 @@ h1 {
   }
   .tx-wrapper {
     display: block;
-    max-width: 1800px;
+    max-width: 1440px;
     margin-inline: auto;
     /* t-r-b-l */
   }
   .txt-box {
     width: 70rem;
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   header {
@@ -316,7 +316,7 @@ h1 {
     /* background-position: center; */
     overflow: hidden;
     width: 100vw;
-    height: 90rem;
+    height: 80rem;
   }
   .grid-two {
     grid-template-columns: repeat(4, 1fr);
@@ -424,5 +424,9 @@ h1 {
   }
   .img-int {
     height: 70rem;
+  }
+  /* ammend text sizes */
+  h1 {
+    font-size: 6rem;
   }
 }
