@@ -12,7 +12,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/loopstudios-landing-page-LoJ9hURN7n)
 - [Live Site](https://hk273.github.io/loopstudios-landing-page/)
 
 ### Useful Resources
